@@ -17,6 +17,9 @@ config(['$routeProvider', function($routeProvider) {
 }]).
 value('Fun', 'FunRoom').
 value('Aquarium', 'AquariumRoom').
-value('rooms', ['Fun', 'Aquarium']);
+value('rooms', ['Fun', 'Aquarium']).
+
+// in minutes
+value('defaultDuration', 30);
 
 angular.module('myApp.controllers', []);
