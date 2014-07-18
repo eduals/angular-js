@@ -1,7 +1,8 @@
-AngularJS workshop at [Despark][despark]
+[AngularJS][] workshop at [Despark][]
 ==================
 
 
 
 
-[despark]: http://despark.com
+[Despark]: http://despark.com
+[AngularJS]: https://angularjs.org/
