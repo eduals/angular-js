@@ -2,6 +2,6 @@
 
 /* Controllers */
 
-angular.module('myApp.controllers', []).controller('List', ['$scope', function($scope) {
+angular.module('myApp.controllers', []).controller('ListCtrl', ['$scope', function($scope) {
 
 }]);
