@@ -13,7 +13,7 @@ config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/list', {templateUrl: 'partials/partial1.html', controller: 'ListCtrl'});
   $routeProvider.when('/appointment', {templateUrl: 'partials/partial2.html', controller: 'Appointment'});
   $routeProvider.when('/status', {templateUrl: 'partials/status.html', controller: 'StatusCtrl'});
-  $routeProvider.otherwise({redirectTo: '/list'});
+  $routeProvider.otherwise({redirectTo: '/status'});
 }]);
 
 angular.module('myApp.controllers', []);
