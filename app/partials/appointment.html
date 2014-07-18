@@ -1,0 +1,13 @@
+<h4>Create an appointment</h4>
+<div>
+<form novalidate class="simple-form">
+    Title: <input type="text" ng-model="appointment.title" /><br />
+    Start Date: <input type="text" ng-model="appointment.date" /><br />
+    Period: <select type="radio" ng-model="appointment.period">
+    	<option value="30">Half an hour</option>
+    	<option value="60">One hour</option>
+    </select><br />
+    Reason: <input type="text" ng-model="appointment.comment"/><br />
+    <button ng-click="save()">Create</button>
+  </form>
+</div>
