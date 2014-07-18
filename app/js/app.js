@@ -12,5 +12,6 @@ angular.module('myApp', [
 config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/list', {templateUrl: 'partials/partial1.html', controller: 'List'});
   $routeProvider.when('/appointment', {templateUrl: 'partials/partial2.html', controller: 'Appointment'});
+  $routeProvider.when('/status', {templateUrl: 'partials/status.html', controller: 'StatusCtrl'});
   $routeProvider.otherwise({redirectTo: '/list'});
 }]);
