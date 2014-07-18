@@ -14,6 +14,9 @@ config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/appointment', {templateUrl: 'partials/partial2.html', controller: 'Appointment'});
   $routeProvider.when('/status', {templateUrl: 'partials/status.html', controller: 'StatusCtrl'});
   $routeProvider.otherwise({redirectTo: '/status'});
-}]);
+}]).
+value('Fun', 'FunRoom').
+value('Aquarium', 'AquariumRoom').
+value('rooms', ['Fun', 'Aquarium']);
 
 angular.module('myApp.controllers', []);
