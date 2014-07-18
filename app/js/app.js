@@ -15,3 +15,5 @@ config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/status', {templateUrl: 'partials/status.html', controller: 'StatusCtrl'});
   $routeProvider.otherwise({redirectTo: '/list'});
 }]);
+
+angular.module('myApp.controllers', []);

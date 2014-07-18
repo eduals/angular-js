@@ -2,7 +2,7 @@
 
 /* Controllers */
 
-angular.module('myApp.controllers', []).controller('StatusCtrl', ['$scope', function($scope) {
+angular.module('myApp.controllers').controller('StatusCtrl', ['$scope', function($scope) {
 
 	$scope.rooms = [
 		{name:'Aquarium','status':'taken'},
