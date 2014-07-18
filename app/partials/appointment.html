@@ -1,0 +1,35 @@
+<h4>Create an appointment</h4>
+<div>
+<form novalidate class="simple-form">
+	<table>
+		<tbody>
+			<tr>
+				<td>Room</td>
+				<td>
+					<select ng-model="appointment.room">
+						<option ng-repeat="room in rooms" value="{{ room }}">{{ room }}</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Person</td>
+				<td><input type="text" ng-model="appointment.person" /></td>
+			</tr>
+			<tr>
+				<td>Date</td>
+				<td><input type="text" ng-model="appointment.date" /></td>
+			</tr>
+			<tr>
+				<td>Duration</td>
+				<td>
+					<select type="radio" ng-model="appointment.duration">
+				    	<option value="30">Half an hour</option>
+						<option value="60">One hour</option>
+					</select>
+				</td>
+			</tr>
+    	</tbody>
+    </table>
+    <button ng-click="save()">Create</button>
+  </form>
+</div>
