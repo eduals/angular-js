@@ -3,9 +3,9 @@ myApp.factory('Appointment' ,function () {
 
 	Appointment.getList = function () {
 		return appointments;
-	} 	
+	}; 	
 
-	function Apointment(data) = {
+	Apointment.setList = function (data) {
 		this.title = data.title;
 		this.duration = data.duration;
 		this.date = new Data();
