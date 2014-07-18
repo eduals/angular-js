@@ -13,7 +13,10 @@ config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/list', {templateUrl: 'partials/partial1.html', controller: 'ListCtrl'});
   $routeProvider.when('/appointment', {templateUrl: 'partials/appointment.html', controller: 'Appointment'});
   $routeProvider.when('/status', {templateUrl: 'partials/status.html', controller: 'StatusCtrl'});
-  $routeProvider.otherwise({redirectTo: '/list'});
-}]);
+  $routeProvider.otherwise({redirectTo: '/status'});
+}]).
+value('Fun', 'FunRoom').
+value('Aquarium', 'AquariumRoom').
+value('rooms', ['Fun', 'Aquarium']);
 
 angular.module('myApp.controllers', []);

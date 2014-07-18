@@ -2,11 +2,10 @@
 
 /* Controllers */
 
-angular.module('myApp.controllers').controller('StatusCtrl', ['$scope', function($scope) {
-
-	$scope.rooms = [
-		{name:'Aquarium','status':'taken'},
-		{name:'Fun','status':'available'}
-	]
+angular.module('myApp.controllers').controller('StatusCtrl', ['$scope', 'rooms', '$rootScope', function($scope, rooms, $rootScope) {
+	$scope.rooms = []
+    rooms.forEach(function (room) {
+        $scope.rooms.push({name:room, status:'taken'});    
+    });
 
 }]);
