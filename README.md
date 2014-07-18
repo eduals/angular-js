@@ -11,6 +11,15 @@ Specification:
 
 - See overview of the schedule.
 
+---
+
+Appointment fields:
+
+ - room
+ - person
+ - date
+ - duration
+
 
 [Despark]: http://despark.com
 [AngularJS]: https://angularjs.org/
