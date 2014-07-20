@@ -6,7 +6,7 @@ angular.module('myApp.controllers').controller('Appointment', ['$scope', '$rootS
 	if (!$rootScope.appointments) {
 		$rootScope.appointments = [];
 	}
-
+	
 	$scope.appointment = {
 		'room': rooms[0],
 		'duration': 30
