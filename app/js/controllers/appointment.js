@@ -11,8 +11,14 @@ angular.module('myApp.controllers').controller('Appointment', ['$scope', '$rootS
 		'room': rooms[0],
 		'duration': 30
 	};
-	
+
 	$scope.rooms = rooms;
+
+	$scope.initPicker = function(){
+		$('#datetimepicker1').datetimepicker({
+		      language: 'pt-BR'
+		});
+	};
 
 	$scope.addAppointment = function() {
 		$scope.appointment.date = new Date($scope.appointment.date);
