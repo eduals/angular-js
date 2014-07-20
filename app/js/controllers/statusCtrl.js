@@ -10,5 +10,4 @@ angular.module('myApp.controllers').controller('StatusCtrl', ['$scope', 'rooms',
         	status: isTaken(room)
        });
     });
-
 }]);

@@ -11,11 +11,12 @@ angular.module('myApp.controllers').controller('Appointment', ['$scope', '$rootS
 		'room': rooms[0],
 		'duration': 30
 	};
+	
 	$scope.rooms = rooms;
 
-	$scope.save = function() {
+	$scope.addAppointment = function() {
 		$scope.appointment.date = new Date($scope.appointment.date);
 		$rootScope.appointments.push($scope.appointment);
-		$location.path('/status');
-	}
+		$location.path('/status');	
+	};
 }]);

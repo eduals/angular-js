@@ -18,7 +18,8 @@ angular.module('myApp.services').
   	return function(room) {
   		var currentTime = new Date().getTime();
   		var result = 'free';
-  		appointments.forEach(function(appointment) {
+  		
+      appointments.forEach(function(appointment) {
   			if (appointment.room !== room) {
   				return;
   			}

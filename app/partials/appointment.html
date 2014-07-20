@@ -1,28 +1,29 @@
 <h4>Create an appointment</h4>
 <div>
-<form novalidate class="simple-form">
+<form novalidate class="simple-form" name="appointmentForm" 
+	ng-submit="appointmentForm.$valid && addAppointment()">
 	<table>
 		<tbody>
 			<tr>
 				<td>Room</td>
 				<td>
-					<select ng-model="appointment.room">
+					<select ng-model="appointment.room" required>
 						<option ng-repeat="room in rooms" value="{{ room }}">{{ room }}</option>
 					</select>
 				</td>
 			</tr>
 			<tr>
 				<td>Person</td>
-				<td><input type="text" ng-model="appointment.person" /></td>
+				<td><input type="text" ng-model="appointment.person" required/></td>
 			</tr>
 			<tr>
 				<td>Date</td>
-				<td><input type="text" ng-model="appointment.date" /></td>
+				<td><input type="text" ng-model="appointment.date" required/></td>
 			</tr>
 			<tr>
 				<td>Duration</td>
 				<td>
-					<select type="radio" ng-model="appointment.duration">
+					<select type="radio" ng-model="appointment.duration" required>
 				    	<option value="30">Half an hour</option>
 						<option value="60">One hour</option>
 					</select>
@@ -30,6 +31,7 @@
 			</tr>
     	</tbody>
     </table>
-    <button ng-click="save()">Create</button>
+    <div ng-show="appointmentForm.$invalid">Please Fill Alll Fields</div>
+    <input type="submit" ng-hide="appointmentForm.$invalid" value="Submit Appointment" />
   </form>
 </div>
